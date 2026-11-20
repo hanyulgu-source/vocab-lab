@@ -83,3 +83,351 @@ nav button:active {
     padding: 24px 18px;
   }
 }
+/* VOCAB LAB ADVANCED DESIGN */
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.advanced-nav {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.advanced-nav button {
+  min-height: 76px;
+  border: 1px solid #dce8f8;
+  border-radius: 17px;
+  background: white;
+  color: #315f99;
+  font-weight: bold;
+  box-shadow: 0 3px 12px #dce7f5;
+}
+
+.advanced-nav button:active {
+  transform: scale(.97);
+}
+
+.today input,
+.today select {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #d5e3f5;
+  border-radius: 12px;
+  background: white;
+  color: #263b59;
+}
+
+.today button {
+  padding: 12px 17px;
+  margin: 5px 3px;
+  border: none;
+  border-radius: 12px;
+  background: #dceaff;
+  color: #315f99;
+}
+
+.choice {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0 !important;
+  background: #edf4ff !important;
+}
+
+.search-result {
+  padding: 15px;
+  margin: 10px 0;
+  background: #f1f6ff;
+  border-radius: 14px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7,minmax(0,1fr));
+  gap: 5px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.calendar-grid > * {
+  min-width: 0;
+  padding: 8px 2px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  border-radius: 10px;
+  border: none;
+  background: #f0f5fc;
+  color: #315f99;
+}
+
+.calendar-day.active {
+  background: #c8e0ff;
+  font-weight: bold;
+}
+
+.calendar-day small {
+  font-size: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 12px;
+  accent-color: #5798dc;
+}
+
+body.dark-mode {
+  background: #172334;
+  color: #e5edf8;
+}
+
+.dark-mode header {
+  background: linear-gradient(135deg,#263d59,#344f70);
+}
+
+.dark-mode header h1,
+.dark-mode header p {
+  color: #e5efff;
+}
+
+.dark-mode .welcome,
+.dark-mode .today {
+  background: #23344a;
+  color: #e5edf8;
+  box-shadow: 0 3px 12px #101c2c;
+}
+
+.dark-mode .welcome h2,
+.dark-mode .today h2,
+.dark-mode .today h3 {
+  color: #bcd9ff;
+}
+
+.dark-mode .advanced-nav button,
+.dark-mode .today button {
+  background: #344c69;
+  color: #e5efff;
+  border-color: #405b7b;
+}
+
+.dark-mode .today input,
+.dark-mode .today select {
+  background: #172334;
+  color: #e5edf8;
+  border-color: #50647d;
+}
+
+.dark-mode .search-result,
+.dark-mode .calendar-day {
+  background: #30445e;
+  color: #e5edf8;
+}
+
+.dark-mode .calendar-day.active {
+  background: #466d9c;
+}
+
+@media(max-width:480px) {
+  .advanced-nav {
+    gap: 9px;
+  }
+
+  .advanced-nav button {
+    font-size: 14px;
+    min-height: 68px;
+  }
+}
+/* VOCAB LAB ADVANCED DESIGN */
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.advanced-nav {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.advanced-nav button {
+  min-height: 76px;
+  border: 1px solid #dce8f8;
+  border-radius: 17px;
+  background: white;
+  color: #315f99;
+  font-weight: bold;
+  box-shadow: 0 3px 12px #dce7f5;
+}
+
+.advanced-nav button:active {
+  transform: scale(.97);
+}
+
+.today input,
+.today select {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #d5e3f5;
+  border-radius: 12px;
+  background: white;
+  color: #263b59;
+}
+
+.today button {
+  padding: 12px 17px;
+  margin: 5px 3px;
+  border: none;
+  border-radius: 12px;
+  background: #dceaff;
+  color: #315f99;
+}
+
+.choice {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0 !important;
+  background: #edf4ff !important;
+}
+
+.search-result {
+  padding: 15px;
+  margin: 10px 0;
+  background: #f1f6ff;
+  border-radius: 14px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7,minmax(0,1fr));
+  gap: 5px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.calendar-grid > * {
+  min-width: 0;
+  padding: 8px 2px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  border-radius: 10px;
+  border: none;
+  background: #f0f5fc;
+  color: #315f99;
+}
+
+.calendar-day.active {
+  background: #c8e0ff;
+  font-weight: bold;
+}
+
+.calendar-day small {
+  font-size: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 12px;
+  accent-color: #5798dc;
+}
+
+body.dark-mode {
+  background: #172334;
+  color: #e5edf8;
+}
+
+.dark-mode header {
+  background: linear-gradient(135deg,#263d59,#344f70);
+}
+
+.dark-mode header h1,
+.dark-mode header p {
+  color: #e5efff;
+}
+
+.dark-mode .welcome,
+.dark-mode .today {
+  background: #23344a;
+  color: #e5edf8;
+  box-shadow: 0 3px 12px #101c2c;
+}
+
+.dark-mode .welcome h2,
+.dark-mode .today h2,
+.dark-mode .today h3 {
+  color: #bcd9ff;
+}
+
+.dark-mode .advanced-nav button,
+.dark-mode .today button {
+  background: #344c69;
+  color: #e5efff;
+  border-color: #405b7b;
+}
+
+.dark-mode .today input,
+.dark-mode .today select {
+  background: #172334;
+  color: #e5edf8;
+  border-color: #50647d;
+}
+
+.dark-mode .search-result,
+.dark-mode .calendar-day {
+  background: #30445e;
+  color: #e5edf8;
+}
+
+.dark-mode .calendar-day.active {
+  background: #466d9c;
+}
+
+@media(max-width:480px) {
+  .advanced-nav {
+    gap: 9px;
+  }
+
+  .advanced-nav button {
+    font-size: 14px;
+    min-height: 68px;
+  }
+}
