@@ -1,0 +1,12 @@
+{
+  "name": "VOCAB LAB - English Vocabulary Learning",
+  "short_name": "VOCAB LAB",
+  "description": "나만의 수능 영어 어휘 학습 앱",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f7ff",
+  "theme_color": "#dcecff"
+}
